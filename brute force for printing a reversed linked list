@@ -1,0 +1,13 @@
+#printing a reversed linked list using brute force method 
+def printlistreverse(head):
+    currentnode=head
+    numnodes=0
+    while curretnode is not None:
+        currentnode=currentnode.next 
+        numnodes+=1
+for i in range(numnodes):
+    currentnode=head
+    for j in range(numnodes-1):
+        curretnode=curretnnode.next 
+        print(currentnode.data)
+    
