@@ -1,0 +1,10 @@
+def printreverselist(head):
+    
+    s=stack()
+    curretnode=head
+    while curretnode is not None :
+        s.push(curretnode.data)
+        currentnode=curretnode.next
+    while len(s)>0:
+        item=pop()
+        print item 
