@@ -1,13 +1,13 @@
 class Hashtable:
     def __init__(self):
 
-        self.max=100
+        self.max=self.max
         self.arr=[None for i in range(self.max)]
     def get_hash(self,key):
         k=0
         for i in key:
             k+=ord(i)
-            return k%100
+            return k%self.max
     def add_key_value_pair(self,key,value):
         k=self.get_hash(key)
         self.arr[k]=value
@@ -18,7 +18,3 @@ class Hashtable:
 
 
 
-tag=Hashtable()
-print(tag.get_hash('dadou'))
-print(tag.add_key_value_pair('dadou', 120))
-print(tag.get_key_value_pair('dadou '))
