@@ -1,8 +1,8 @@
 class Hashtable:
     def __init__(self):
 
-        self.max=self.max
-        self.arr=[None for i in range(self.max)]
+        self.size=size
+        self.arr=[None for i in range(size)]
     def get_hash(self,key):
         k=0
         for i in key:
