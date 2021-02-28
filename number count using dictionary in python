@@ -1,0 +1,9 @@
+counts=dict()
+names=['boruto','naruto','uzumaki','boruto','uzumaki', 'sasuke']
+for i in names:
+    if i not in counts:
+        counts[i]=1
+    else:
+        counts[i]+=1
+
+print(counts)
