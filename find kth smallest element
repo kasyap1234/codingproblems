@@ -1,0 +1,6 @@
+#find the k the smallest number (2nd smallest )
+def arraythelist(thearray,n,k):
+    n=len(thearray)
+    thearray.sort()
+    return thearray[k-1]
+    
