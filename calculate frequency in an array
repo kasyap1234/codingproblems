@@ -1,0 +1,8 @@
+thearray=[]
+count=0
+def frequency(thearray,x):
+    for i in range(len(thearray)-1):
+        if thearray[i]==x:
+            count=count + 1 
+        return count
+    
