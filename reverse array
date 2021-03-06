@@ -1,0 +1,13 @@
+
+import stack
+
+def reversearray(thearray):
+    
+    s=stack()
+    for i in range(len(thearray)):
+        s.append[i]
+     return s 
+     while not  s.empty:
+         item=s.pop()
+     return item
+     
