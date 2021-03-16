@@ -1,0 +1,9 @@
+def pair_of_numbers(target):
+    for i in range(target+1):
+        for j in range(target +1):
+            if i + j ==target:
+                print(i,j)
+
+     
+
+print(pair_of_numbers(10))
