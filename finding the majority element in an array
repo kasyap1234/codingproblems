@@ -1,0 +1,23 @@
+my_list=[1,2,2,2,2,2,3,4,5,6,5,5,4,5]
+def find_max(my_list):
+    maximum_count=0
+    ind=0
+
+
+    size=len(my_list)
+    for i in my_list:
+        count=0
+
+        for j in my_list:
+            if(my_list[i]==my_list[j]):
+                count+=1
+        if maximum_count<count:
+            maximum_count=count
+            ind=i
+        if maximum_count>size//2:
+            return my_list[ind]
+            
+
+        else:
+            return "no majority element found"
+print(find_max(my_list))
