@@ -1,6 +1,6 @@
 my_list=[1,2,2,2,2,2,3,4,5,6,5,5,4,5]
 def find_max(my_list):
-    maximum_count=0
+
     ind=0
 
 
@@ -11,10 +11,10 @@ def find_max(my_list):
         for j in my_list:
             if(my_list[i]==my_list[j]):
                 count+=1
-        if maximum_count<count:
-            maximum_count=count
-            ind=i
-        if maximum_count>size//2:
+    
+            
+        if count>size//2:
+            ind =i
             return my_list[ind]
             
 
