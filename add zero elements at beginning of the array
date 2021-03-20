@@ -1,0 +1,10 @@
+array=[0,1,0,0,0,2,3,]
+mylist=[]
+for i in array:
+    if i==0:
+        mylist.append(i)
+for j in array:
+    if j!=0:
+        mylist.append(j)
+print(mylist)
+
