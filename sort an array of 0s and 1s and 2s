@@ -1,0 +1,14 @@
+mylist=[0,1,2,1,0,2,1,0,2]
+arr=[]
+def sort_find(mylist):
+    for i in mylist:
+        if i==0:
+            arr.append(i)
+    for j in mylist:
+        if j==1:
+            arr.append(j)
+    for k in mylist:
+        if k==2:
+            arr.append(k)
+    return arr
+print(sort_find(mylist))
