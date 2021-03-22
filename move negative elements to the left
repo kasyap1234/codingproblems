@@ -1,0 +1,13 @@
+
+mylist=[-12,11,-13,-5,6,-7,5,-3,-6]
+arr=[]
+def move_negative_elements(mylist,arr):
+
+    for i in mylist:
+        if i<0:
+            arr.append(i)
+    for j in mylist:
+        if j>0:
+            arr.append(j)
+    return arr
+print(move_negative_elements(mylist,arr))
