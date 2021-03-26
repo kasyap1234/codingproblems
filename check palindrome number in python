@@ -1,0 +1,16 @@
+#check for a  palindrome number using recursion  
+#for example 121 is a palindrome number 
+def check_palindrome(n):
+
+
+	num=0 
+	if n==0:
+		return num 
+	else:
+		num=num*10 +(n/10)
+	    return check_palindrome(n/10)
+    if num==n:
+    	print("is a palindrome ")
+    else:
+    	print("not a palindrome ")
+
