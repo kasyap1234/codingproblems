@@ -1,0 +1,9 @@
+#find the largest gap in an array i.e is max of the difference between any two elements
+#for this the simple method is to sort the elements and then subtract the maximum and minimum elements
+def largestgap(ar):
+	n=len(ar)
+
+	ar.sort()
+	find_max=ar[n-1]-ar[0]
+	return find_max
+print(largestgap([1,7,3,2,5,9,6]))
