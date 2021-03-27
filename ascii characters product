@@ -1,0 +1,6 @@
+def printascii(stringmy):
+	product =1
+	for i in range(len(stringmy)-1):
+		product=product*ord(stringmy[i])
+	return product
+print(printascii('kasyap'))
