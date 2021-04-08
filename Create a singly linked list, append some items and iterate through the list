@@ -1,0 +1,29 @@
+class Node: 
+	def __init__(self,data):
+		self.data=data
+		self.next=None 
+class Linkedlist: 
+	def __init__(self):
+		self.head=None
+		self.count=0
+    def iterate(self):
+    	cur=self.head 
+    	while cur: 
+    		cur=self.head 
+    		print(cur.data)
+    		cur=cur.next 
+
+    def append_start(self,node):
+    	node=Node(data)
+    	if self.head is None : 
+    		self.head=node
+    def append_btw_two_nodes(self,node,prevnode):
+    	node=Node(data)
+    	prevnode=Node(data)
+    	cur=self.head 
+    	while cur: 
+    		cur=cur.next 
+    		if cur==prevnode: 
+    			cur.next=node
+    			prevnode.next=node.next 
+    
