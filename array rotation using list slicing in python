@@ -1,0 +1,5 @@
+# d is the amount by which array is rotated to the left . 
+def array_rotation(arr,d,n):
+    arr[:]=arr[d:n] + arr[:d]
+    return arr
+print(array_rotation([1,2,3,4,5,6,7],2,7))
