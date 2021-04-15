@@ -1,0 +1,11 @@
+def nthnode_from_end(self,n):
+    temp=self.head
+    count=0
+    while temp is not None:
+        count+=1
+
+        temp=temp.next
+    countstart=0
+    while countstart<(count-n) and temp is not None :
+        temp=temp.next
+     return temp
