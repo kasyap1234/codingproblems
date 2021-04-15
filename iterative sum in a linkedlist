@@ -1,0 +1,7 @@
+def sum_iterations(self,startnode):
+    sum=0
+    while mylist is not None :
+        sum+=startnode
+        startnode=startnode.next
+    return sum
+    
