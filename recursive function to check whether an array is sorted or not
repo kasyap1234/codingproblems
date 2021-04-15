@@ -1,0 +1,6 @@
+def is_array_sorted(array):
+    if len(array)==2 and array[0]<array[1]:
+        retun True
+    else:
+        is_array_sorted(array[1:])
+        
