@@ -1,0 +1,17 @@
+def length_linkedlist(self,linkedlist):
+    currentnode=head
+    count=0
+    while currentnode is not None:
+        currentnode=currentnode.next
+        count+=1
+    return count
+
+
+
+#linkedlist2 is the name of the linkedlist whose recursive sum is to be calculated
+def recursive_sum(self,startnode):
+    currentnode=head
+    if length_linkedlist(linkedlist2)==1:
+        return head.data
+    else:
+        return head.data + recursive_sum(self,startnode.next)
