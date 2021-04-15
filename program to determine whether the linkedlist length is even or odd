@@ -1,0 +1,13 @@
+def isEvenOrOdd(self):
+    currentnode=self.head
+    count=0
+    while currentnode is not None :
+        currentnode=currentnode.next
+        count+=1
+    
+    if count%2==0:
+     
+      return "even"
+    else:
+      return "odd"
+      
