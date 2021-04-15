@@ -1,0 +1,13 @@
+
+#insert a node in a sorted linkedlist
+def sortedInsert(self,item):
+    itemnode=Node(item)
+    currentnode=self.head
+    while currentnode.data<item:
+
+            currentnode=currentnode.next
+
+    return currentnode
+    itemnode.next=currentnode.next
+    currentnode.next=itemnode
+    
