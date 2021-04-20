@@ -1,0 +1,18 @@
+#for binary search to work the list should be sorted
+def binarysearch(mylist,value):
+    low=0
+    n=len(mylist)
+    high=n-1
+    mid=(low+high)//2
+
+    while low<=high:
+        if value==mylist[mid]:
+            return "value found "
+        if value<mylist[mid]:
+           high=mid -1
+        else:
+           low=mid +1
+    return None
+print(binarysearch([2,5,6,7,8,9],8))
+
+           
