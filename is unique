@@ -1,0 +1,10 @@
+#implement an algorithm to determine if a string has all unique characters 
+def is_unique(string1,string2): 
+    string1.lower()
+    string2.lower()
+    for i in string1: 
+        for j in string2: 
+            if i==j: 
+                return False 
+    return True 
+print(is_unique("back","dog"))
