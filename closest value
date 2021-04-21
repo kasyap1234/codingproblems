@@ -1,0 +1,12 @@
+def is_closest(array,target):
+    close=[]
+    for i in array:
+        diff=target-i
+        close.append(diff)
+    minimum=close[0]
+    for s in range(len(close)):
+        if minimum<close[s]:
+            minimum=close[s]
+
+    return target-close[s]
+print(is_closest([1,2,4,5,6,6,8,9],11))
