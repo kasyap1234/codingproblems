@@ -2,7 +2,7 @@ Create a function that takes a list lst of numbers and moves all zeros to the en
 
 def move_zeros(lst):
     newlst=[]
-    for i in list:
+    for i in lst:
         if i!=0:
             newlst.append(i)
         if i==0:
