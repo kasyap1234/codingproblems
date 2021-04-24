@@ -1,0 +1,10 @@
+Create a function that takes a list lst of numbers and moves all zeros to the end, preserving the order of the other elements.
+
+def move_zeros(lst):
+    newlst=[]
+    for i in list:
+        if i!=0:
+            newlst.append(i)
+        if i==0:
+            newlst.append(i)
+    return newlst
