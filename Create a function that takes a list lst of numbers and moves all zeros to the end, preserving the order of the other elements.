@@ -5,6 +5,7 @@ def move_zeros(lst):
     for i in lst:
         if i!=0:
             newlst.append(i)
-        if i==0:
-            newlst.append(i)
+    for j in lst:
+        if j==0:
+            newlst.append(j)
     return newlst
