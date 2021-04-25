@@ -1,0 +1,4 @@
+def change_sign(lst):
+    for i in lst:
+        print(-i,end="")
+print(change_sign([1,2,3,4,5,5]))
