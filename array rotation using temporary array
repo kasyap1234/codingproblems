@@ -1,0 +1,14 @@
+def array_rotation(arr,n,k):
+	temp=[]
+	i=0
+	while i<k:
+		temp.append(arr[i])
+		i=i+1
+	while d<n:
+		arr[i]=arr[d]
+		i=i+1
+		d=d+1
+    arr[:]=arr[:i] + temp
+	return arr
+	
+print(array_rotation([1,2,3,4,5,6,7],7,3))
