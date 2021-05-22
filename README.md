@@ -1,2 +1,3 @@
-# codingproblems.py-
-includes many coding problems in python 
+# codingproblems
+includes many coding problems in python and c++; 
+
