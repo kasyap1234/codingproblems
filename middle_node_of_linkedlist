@@ -1,0 +1,44 @@
+int getMiddle(Node *head)
+{
+  
+   int count=0; 
+   int length;
+   int position=0; 
+   Node*p=head; 
+   while(p!=NULL){
+       count +=1; 
+       
+   }
+   if (head=NULL){
+       return -1; 
+   }
+  length=count ; 
+  p=head; 
+  if(length%2==1){
+      while(p!=NULL){
+          p=p->next; 
+          
+         
+          
+          if(position==(length/2)+1){
+              return p->data; 
+              
+          }
+           position+=1; 
+      }
+  }
+  else{
+      position=0;
+      while(p!=NULL){
+          p=p->next; 
+          
+          if(position==length/2){
+              return p->data; 
+              
+            
+          }
+          
+      }
+      position+=1; 
+  }
+}
