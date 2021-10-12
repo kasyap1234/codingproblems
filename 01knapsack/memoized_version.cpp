@@ -6,7 +6,7 @@ using namespace std;
 int knapsack(int weight[],int value[],int n,int W){
   for(int i=0;i<n+2;i++){
     for(int j=0;j<W+2;j++){
-        dp[i][j]=0; 
+        dp[i][j]=-1; 
         
 
     }
@@ -15,7 +15,7 @@ int knapsack(int weight[],int value[],int n,int W){
 if(n==0||W==0){
 return 0; 
 }
-  if(dp[n][W]!=0){
+  if(dp[n][W]!=-1){
   return dp[n][W]; 
     
   }
