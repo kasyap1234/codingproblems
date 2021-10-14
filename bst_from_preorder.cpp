@@ -20,11 +20,12 @@ public:
                 ltree.push_back(preorder[i]); 
                 
             }
-            root->left=bstFromPreorder(ltree); 
-            root->right=bstFromPreorder(rtree); 
+             
              
             
         }
+        root->left=bstFromPreorder(ltree); 
+            root->right=bstFromPreorder(rtree);
         return root; 
         
     }
