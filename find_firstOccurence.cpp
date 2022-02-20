@@ -4,7 +4,9 @@
 
 using namespace std; 
 int FindFirst(vector<int>array,int position,int element){
-int FirstIndex=FindFirst(array,position+1,x); 
+    if(position==array.size()-1){
+    return -1; }
+    int FirstIndex=FindFirst(array,position+1,x); 
 if(array[position]==x){
     return position; 
 }
